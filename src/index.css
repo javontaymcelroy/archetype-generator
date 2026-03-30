@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "vault66-crt-effect/dist/vault66-crt-effect.css";
+
+@layer base {
+  :root {
+    --item-h: 52px;
+  }
+
+  body {
+    margin: 0;
+    background-color: #000;
+    color: rgba(255,255,255,0.88);
+    font-family: 'Cutive Mono', monospace;
+    --font-secondary: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * { box-sizing: border-box; }
+
+  /* Hide native cursor — replaced by custom cursor component */
+  *, *::before, *::after { cursor: none !important; }
+
+  ::-webkit-scrollbar { width: 3px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+}
